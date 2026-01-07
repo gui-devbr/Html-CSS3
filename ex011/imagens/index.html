@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Um Cantinho Só Nosso</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FF91B3, #FF6F91, #FF1493);
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+    color: #FFFFE0; /* amarelo claro que se destaca no rosa */
+    text-shadow: 2px 2px #FF1493;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    background: #FF69B4;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border-radius: 25px;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+  }
+
+  nav a:hover {
+    transform: scale(1.1);
+    background: #FF1493;
+  }
+
+  .heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('https://i.ibb.co/9qvGb7K/heart.png') no-repeat center center;
+    background-size: contain;
+    animation: float 6s linear infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(-800px) translateX(50px) rotate(360deg); opacity: 0; }
+  }
+
+  /* Seções escondidas por padrão */
+  #momentos, #mensagens {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #momentos h2, #mensagens h2 {
+    color: #fff;
+    text-shadow: 1px 1px #FF1493;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    background: #FF69B4;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    margin: 15px auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: left;
+  }
+
+  .chat-bubble {
+    background: #FFB6C1;
+    padding: 15px;
+    border-radius: 15px;
+    margin: 10px auto;
+    width: 280px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: #fff;
+    text-align: left;
+    position: relative;
+  }
+
+  .chat-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #FFB6C1;
+    border-bottom: 0;
+    margin-bottom: -10px;
+  }
+
+</style>
+</head>
+<body>
+
+<h1>Um cantinho só nosso</h1>
+
+<nav>
+  <a href="#" id="btnMensagens">Mensagens</a>
+  <a href="#" id="btnMomentos">Momentos</a>
+</nav>
+
+<!-- Seção de Momentos -->
+<section id="momentos">
+  <h2>Momentos</h2>
+
+  <div class="card">
+    <h3>Primeiro Assunto – Aonde a gente mora</h3>
+    <p>Lembra quando a gente começou a conversar e o primeiro assunto foi… onde a gente mora? 😄
+Só a gente mesmo pra começar amizade falando de rua, bairro.
+Mas foi legal demais, né? A gente rindo das coincidências, descobrindo que o mundo é pequeno…
+E do nada eu percebi: “caramba, conversar com essa menina é fácil demais".</p>
+  </div>
+
+  <div class="card">
+    <h3>Família</h3>
+    <p>Teve aquele dia que eu, do nada, conversei com teu pai depois da aula 😂
+Pedi carona e no final… nada feito, porque minha casa parecia que ficava em outro continente
+Mas valeu a conversa.
+E quando falamos do teu tio… deu pra ver o quanto você é forte e segura das coisas.
+Aí eu pensei: “beleza, essa garota é braba mesmo</p>
+  </div>
+
+  <div class="card">
+    <h3>Livros</h3>
+    <p>Quando a gente falou de livros, então…
+Eu perguntando normal, e você manda um “ah, tem um livro aí, mas é meio diferente… homem com homem” 😆
+Eu fiquei tipo: “ok, não tava esperando esse plot twist às 10h da  manha”.
+A gente falou de You, você querendo o livro, e depois ainda me mostra Pai Rico, Pai Pobre como se fosse uma recomendação secreta do universo 📚💛
+Tu tem um gosto literário aleatório? Tem.
+Mas é isso que deixa o papo massa.</p>
+  </div>
+
+  <div class="card">
+    <h3>Séries</h3>
+    <p>E bom… The Witcher.
+Eu falei da série e você simplesmente: “assisti a primeira temporada em uma semana”.
+Numa semana, Mavih. 😆
+Tu é oficialmente viciada em série, e eu admiro isso.
+Foi engraçado comentar episódio por episódio contigo — parecia que eu tava assistindo de novo, mas com comentários melhores.</p>
+  </div>
+</section>
+
+<!-- Seção de Mensagens -->
+<section id="mensagens">
+  <h2>Mensagens</h2>
+
+  <div class="chat-bubble">
+    Tu é criativa demais 😄  
+    Do nada inventa uma língua nova e fala como se fosse normal.  
+    Teu cérebro roda em 4K, só pode.
+  </div>
+
+  <div class="chat-bubble">
+    Eu adoro quando tu se empolga com as séries 😄  
+    Tu conta tudo tão animada que parece que eu tô assistindo junto.  
+    É impossível não entrar no clima.
+  </div>
+
+  <div class="chat-bubble">
+    Tu explica as coisas de um jeito muito bom 😆  
+    Sério, tu deixa qualquer assunto simples.  
+    Eu fico só ouvindo e pensando: “ok, essa menina manda demais”.
+  </div>
+
+  <div class="chat-bubble">
+    E o jeito que tu repara nos detalhes 💛  
+    Isso aí é raro hoje em dia.  
+    Faz cada conversa com você ter um toque diferente.
+  </div>
+
+</section>
+
+
+<!-- Corações voando -->
+<script>
+  const body = document.body;
+
+  function createHeart() {
+    const heart = document.createElement('div');
+    heart.classList.add('heart');
+    heart.style.left = Math.random() * window.innerWidth + 'px';
+    heart.style.animationDuration = 4 + Math.random() * 4 + 's';
+    heart.style.width = 20 + Math.random() * 30 + 'px';
+    heart.style.height = heart.style.width;
+    body.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 8000);
+  }
+
+  setInterval(createHeart, 500);
+
+  // Botões para mostrar Momentos ou Mensagens
+  const btnMomentos = document.getElementById('btnMomentos');
+  const btnMensagens = document.getElementById('btnMensagens');
+  const momentos = document.getElementById('momentos');
+  const mensagens = document.getElementById('mensagens');
+
+  btnMomentos.addEventListener('click', function(e) {
+    e.preventDefault();
+    momentos.style.display = momentos.style.display === 'none' ? 'block' : 'none';
+    mensagens.style.display = 'none';
+  });
+
+  btnMensagens.addEventListener('click', function(e) {
+    e.preventDefault();
+    mensagens.style.display = mensagens.style.display === 'none' ? 'block' : 'none';
+    momentos.style.display = 'none';
+  });
+
+</script>
+
+</body>
+</html>
