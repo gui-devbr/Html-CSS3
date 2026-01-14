@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url('wallpaper002.jpg')
+        }
+        div.quadrado {
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 300px;
+            height: 200px;
+            margin-bottom: 10px;
+        }
+
+        #q1 {
+            background-color: skyblue;
+        }
+
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+
+        #q3 {
+   background-image: url('pattern001.png');
+}
+input {
+    padding: 10px 20px;
+    font-size:15px;
+    font-weight: bold;
+    background-color:cornflowerblue;
+    border: 2px solid black;
+    border-radius:5px;
+    margin-right:10px;
+    cursor:pointer;
+}
+
+input:hover {
+    background-image: linear-gradient(to right, purple,black;)
+}
+    </style>
+
+</head>
+<body>
+    <input type="radio" name="pais" id="eua">
+<label for="eua">Estados Unidos</label>
+
+<input type="radio" name="pais" id="brasil">
+<label for="brasil">Brasil</label>
+
+<div id="res">Resultado</div>
+<button id="confirmar">Confirmar</button>
+
+    
+    
+    
+    
+    
+    <script>
+    var confirmar = document.getElementById("confirmar")
+var res = document.getElementById("res")
+var eua = document.getElementById("eua")
+var brasil = document.getElementById("brasil")
+
+confirmar.addEventListener('click', function() {
+    if (eua.checked) {
+        res.textContent = "Welcome!"
+    } else if (brasil.checked) {
+        res.textContent = "Bem vindo!"
+    } else {
+        res.textContent = "Escolhe um país primeiro 😅"
+    }
+})
+</script>
+</body>
+</html>
