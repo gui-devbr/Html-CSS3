@@ -94,9 +94,9 @@ section {
     padding-top:10vh;
     padding-bottom:10vh;
     line-height: 2em;
-    padding-left: 5vh;
+    padding-left: 3vh;
     font-family: var(--font03);
-    font-size:4vh;
+    font-size:3.5vh;
 }
 
 section.normal {
