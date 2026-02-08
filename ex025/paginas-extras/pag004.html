@@ -3,25 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Script</title>
+    <title>Script Funcional</title>
+    <style>
+        /* aumenta a área do link pra facilitar mouseover */
+        #meulink {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #ddd;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <h1>Click no link</h1>
 
-    <a href="#" onclick="Click()">Click em mim pourra</a>
-    <a id="saida"></a>
-
+    <a href="#" id="meulink">Click em mim pourra</a>
+    <p id="saida"></p>
 
     <script>
- let saida = document.getElementById("saida")
+        // esperar o DOM carregar
+        document.addEventListener("DOMContentLoaded", function() {
+            let link = document.getElementById("meulink")
+            let saida = document.getElementById("saida")
 
-function Click(){
-    saida.innerHTML += "Voce clickou!"
-    
-}
+            // evento de click
+            link.addEventListener("click", function(event) {
+                event.preventDefault() // evita que a página suba
+                saida.innerHTML += "Funcionou!<br>"
+                saida.style.color = "purple"
+            })
 
-
+            // evento de mouseover
+            link.addEventListener("mouseenter", function() {
+                alert("Você passou o mouse pourra 🥶")
+            })
+        })
     </script>
-    
 </body>
 </html>
