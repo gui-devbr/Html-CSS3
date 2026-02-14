@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width:100%;
+    position: relative;
+    
+}
+
+body {
+    background: url("../desafio015/pacote-d013/imagens/fundo-madeira.jpg") no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow:hidden;
+
+}
+
+section#telefone {
+position: absolute;
+top:50%;
+left: 50%;
+transform:translate(-50%, -50%);
+height: 627px;
+width: 311px;
+background: url(pacote-d013/imagens/frame-iphone.png);
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+iframe{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    height:470px;
+    width:267px;
+    border:none;
+    overflow:hidden;
+
+}
+
+section {
+    text-align:right;
+}
+
+
+section#redes-sociais img {
+    width:50px;
+    margin:15px;
+    border-radius:50%;
+    box-shadow: 0px 3.5px 8px rgba(0, 0, 0, 0.63);
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.336);
+    transform: translate(3px);
+    transition-duration:0.4s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.493)
+    
+}
