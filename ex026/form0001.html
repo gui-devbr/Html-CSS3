@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro Formulario</title>
+    <style>
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight:bold
+        }
+
+        table {
+          padding-top: 30px;
+          
+            
+          
+        }
+
+      th, td {
+        border: 1px solid black
+      }
+
+      iframe {
+        width: 400px;
+        height: 200px;
+        overflow:hidden;
+      }
+
+
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+
+    <form action="cadastro.php"  method ="get"      autocomplete="off">
+        <p><label for="Nome">Nome:</label> <input type="text" name="Nome" id="Nome"></p>
+        <p><label for="Sobrenome">Sobrenome:</label> <input type="text"  name="sobrenome" id="Sobrenome"></p> 
+        <input type="submit" value="Seu Nome">
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+         <th>Nomes</th>
+         <th>Sobronomes</th>
+         <tr>
+</tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <td>Guilherme</td>
+            <td>Augusto</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Vitoria</td>
+            </tr>
+
+            <tr>
+                <td>Nicole</td>
+                <td>Caroline</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>Maria</td>
+            </tr>
+        </tbody>
+    </table>
+
+<a href="ex022/index.html" target="Iframe">Meu primeiro site</a>
+
+<iframe name="Iframe" id="Iframe"
+srcdoc="<html style='overflow:hidden;'> <body> <h1>Testando iframes</h1> <img src= 'ex023/Imagens/gokub.webp' width='300'> </body> </html>"
+scrolling="no">
+</iframe>
+    
+</body>
+</html>

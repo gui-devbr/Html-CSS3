@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formes</title>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+
+    <p>Voce tem quantos anos?</p>
+<form>
+    <input type="number" name="idade" id="idade">
+    <label for="idade">Digite a sua idade</label>
+    <input type="button" value="Voce é?" onclick="resultado()">
+</form>
+
+
+
+    <script>
+       let idade = document.getElementById("idade")
+
+        function resultado(){
+
+        if(idade.value == 0){
+            alert("Digite um numero valido")
+        }
+           if(idade.value >= 18){
+            alert("Voce e adulto")
+           } else if(idade.value <= 17 && idade.value >= 10){
+            alert("Voce e adolescente")
+           } else if(idade.value >= 1 && idade.value < 10) {
+            alert("Voce é criança")
+           }
+        }
+
+
+    </script>
+    
+</body>
+</html>
