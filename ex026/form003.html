@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formularios</title>
+</head>
+<body>
+    <h1>Testando formularios</h1>
+    <form action="cadastro.php" autocomplete="on">
+        <p>
+<label for="Inome">Nome</label>
+<input type="text" name="Nome" id="Inome" maxlength="40" riquered autocomplete="name">
+</p>
+<p>
+<label for="Inota">Nota</label>
+<input type="number" name="Nota" id="Inota" riquered min="0" max="10" step="0.1">
+</p>
+
+<p>
+    <label for="Idate">Data</label>
+    <input type="month" name="Mes" id="Idate" riquered value="2026-02">
+</p>
+<p>
+    <label for="Datadaprova">Data da prova</label>
+    <input type="date" name="datap" id="Datadaprova" riquered value="2026-02-20">
+</p>
+
+<p>
+    <label for="Ihora">Data da prova</label>
+    <input type="time" name="hora" id="Ihora">
+</p>
+
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+
+
+
+    </form>
+    
+</body>
+</html>
