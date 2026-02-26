@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <form action="cadastro.php">
+    <p>
+        <label for="Iano">Em que ano voce nasceu?</label>
+        <input type="number" name="Ano" id="Iano" min="1900" max="2026" oninput="Iidade.innerHTML = 2026 - Number(Iano.value)">
+    </p>
+
+    <p>
+        <label for="Iidade">Sua idade é:</label>
+        <output id="Iidade">0</output>
+    </p>
+
+<p>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</p>
+
+
+
+
+    </form>
+
+    <script>
+ let Ano = document.getElementById("Iano")
+
+ let A = Number(Ano.value)
+ if(A.value > 110 || A.value < 0){
+    alert("[Erro] Dados incorretos, tente novamente!")
+ }
+    </script>
+    
+</body>
+</html>

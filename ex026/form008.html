@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Output</title>
+</head>
+<body>
+
+    <form action="cadastro.php">
+
+    <p>
+        <label for="N1">Numero 1:</label>
+        <input type="number" name="Number1" id="N1" oninput="Isoma.innerHTML = Number(N1.value) + Number(N2.value)">
+    </p>
+
+    <p>
+        <label for="N2">Numero 2:</label>
+        <input type="number" name="Number2" id="N2"  oninput="Isoma.innerHTML = Number(N1.value) + Number(N2.value)">
+    </p>
+
+    <p>
+        <label for="Isoma">Soma:</label>
+        <output id="Isoma">0</output>
+        <input type="button" value="Somar" id="Soma" onclick="Somar() ">
+      
+    </p>
+
+    
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+
+<script>
+        function Somar(){
+ let Number01 =document.getElementById("N1")
+ let Number02 = document.getElementById("N2")
+
+ let n1 = Number(Number01.value)
+ let n2 = Number(Number02.value)
+
+ alert(n1 + n2)
+}
+    </script>
+    
+</body>
+</html>
