@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* estilo para  print */
+
+*{
+    margin:10px;
+    padding:10px;
+}
+
+html {
+    font-family:'Courier New', Courier, monospace;
+    line-height:1.5em;
+    background-color: antiquewhite;
+}
+
+menu {
+    display:none;
+}
+
+footer::after {
+    content: 'Esse Artigo foi criado por https:/Neonmind.com.br'
+}
