@@ -1,3 +1,17 @@
 @charset "UTF-8";
 
 /*arquivo de css para portrait (altura maior que largura) */ 
+
+
+
+
+html, body {
+    height:100vh;
+    width: 100vw;
+    background-color: rgb(9, 61, 230);
+    background-image: url(../Imagens/cev-portrait.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+
