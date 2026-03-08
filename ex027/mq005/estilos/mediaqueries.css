@@ -1,33 +1,31 @@
 @charset "UTF-8";
 
 
-@media screen and (min-width:768px) and (max-width:992px){
-    span#burguer{
+@media screen and (min-width: 768px){
+    span#burguer {
         display:none;
     }
 
-    menu {
-        display:block;
-    }
-}
-
-@media screen and (min-width: 993px) and (max-width: 1200px){
-    span#burguer {
-        display:none
-    }
-
-    menu {
+    menu.itens {
         display:block
-    }
-}
 
-@media screen and (min-width: 1201px){
-    span#burguer {
-        display:none
- 
     }
 
-    menu {
-        display:block;
+    main {
+        background-color: cadetblue;
+        box-shadow: 1px 5px 13px rgba(0, 0, 0, 0.363);
+        width: 768px;
+    }
+
+    main > article > h1 {
+        color:rgb(0, 70, 199)
+        
+    }
+
+    article {
+        
+
+        border-radius:5px;
+        color:rgb(122, 255, 211)
     }
 }

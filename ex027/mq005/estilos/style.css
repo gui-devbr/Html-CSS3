@@ -81,9 +81,16 @@ main {
     background-color:gray;
     border-radius:5px;
     padding:5px;
+    box-shadow:1px 5px 13px rgba(0, 0, 0, 0.308);
+    width:90vw;
+    background-color:cadetblue;
 }
 
 main > article > h1 {
-    color:White;
+    color:rgb(0, 70, 199)
+}
+
+main > article {
+    color:rgb(122, 255, 211)
 }
 

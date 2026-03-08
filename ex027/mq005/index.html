@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaqueries.css">
 </head>
-<body>
+<body onresize ="mudoutamanho()">
     <header>
         <h1  id="titulop">Meu site</h1>
         <span id="burguer" class="material-symbols-outlined" onclick="menu()">menu</span>
@@ -44,9 +44,26 @@
         </article>
     </main>
     <script>
-        function menu() {
-           let itens =  document.getElementsByClassName("itens")
+         let itens =  document.getElementsByClassName("itens")
 
+
+        function mudoutamanho(){
+                        if(window.innerWidth >= 768){
+
+                        for(let i = 0; i < itens.length; i++){
+                            itens[i].style.display = 'block'
+                        } 
+                }
+
+                        else{
+                            for(let i = 0; i < itens.length; i ++){
+                                itens[i].style.display = 'none'
+                            }
+                        }
+            
+        }
+        function menu() {
+          
            for(i = 0; i < itens.length; i++){
             if (itens[i].style.display === "block"){
                 itens[i].style.display = "none";
