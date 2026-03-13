@@ -50,16 +50,16 @@
         function mudoutamanho(){
                         if(window.innerWidth >= 768){
 
+                       for(let i = 0; i < itens.length; i++){
+                        itens[i].style.display = "block"
+                       }
+                    } 
+                    
+                    else {
                         for(let i = 0; i < itens.length; i++){
-                            itens[i].style.display = 'block'
-                        } 
-                }
-
-                        else{
-                            for(let i = 0; i < itens.length; i ++){
-                                itens[i].style.display = 'none'
-                            }
+                            itens[i].style.display = "none"
                         }
+                    }
             
         }
         function menu() {
